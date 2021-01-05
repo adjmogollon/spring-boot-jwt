@@ -1,5 +1,4 @@
 /* Populate tables */
-INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES('Andres', 'Guzman', 'profesor@bolsadeideas.com', '2017-08-01', '');
 INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES('John', 'Doe', 'john.doe@gmail.com', '2017-08-02', '');
 INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES('Linus', 'Torvalds', 'linus.torvalds@gmail.com', '2017-08-03', '');
 INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES('Jane', 'Doe', 'jane.doe@gmail.com', '2017-08-04', '');
@@ -45,9 +44,9 @@ INSERT INTO facturas (descripcion, observacion, cliente_id, create_at) VALUES('F
 INSERT INTO facturas_items (cantidad, factura_id, producto_id) VALUES(3, 2, 6);
 
 /* Creamos Usuarios */
-INSERT INTO users (username, password, enabled) VALUES('anibal', '$2a$10$O9wxmH/AeyZZzIS09Wp8YOEMvFnbRVJ8B4dmAMVSGloR62lj.yqXG', 1);
 INSERT INTO users (username, password, enabled) VALUES('admin', '$2a$10$DOMDxjYyfZ/e7RcBfUpzqeaCs8pLgcizuiQWXPkU35nOhZlFcE9MS', 1);
-
+INSERT INTO users (username, password, enabled) VALUES('user', '$2a$10$O9wxmH/AeyZZzIS09Wp8YOEMvFnbRVJ8B4dmAMVSGloR62lj.yqXG', 1);
+                                                                              
 /* Creamos Roles */
 INSERT INTO authorities (user_id, authority) VALUES(1, 'ROLE_USER');
 INSERT INTO authorities (user_id, authority) VALUES(2, 'ROLE_USER');
